@@ -1,0 +1,239 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #2f3e46;
+    background-color: #f4f5df;
+}
+
+/* ================= NAVBAR ================= */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #52796f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #cad2c5;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #cad2c5;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ================= HOME ================= */
+.home-page {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.centro-historico {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY CENTRAL */
+.home-content- {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.stl-h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.stl-p-homepage {
+    font-size: 24px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.stl-h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #354f52;
+}
+
+section p {
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+    font-size: 18px;
+}
+
+/* ================= TRIPME ================= */
+.trips-ponints {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.tupes,
+.inpa,
+.manauara {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* INTERCALANDO */
+.inpa {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.stl-h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #52796f;
+}
+
+.stl-img {
+    width: 45%;
+    border-radius: 16px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* HOVER NAS IMAGENS */
+.stl-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= MAPA ================= */
+.mapa-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* ================= UL PADRONIZADAS ================= */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+ul li {
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+ul li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+}
+
+/* ================= FOOTER ================= */
+.footer-amazoni {
+    background-color: #354f52;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column h3,
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+    color: #cad2c5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #2f3e46;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
